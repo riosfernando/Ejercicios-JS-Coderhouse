@@ -5,54 +5,61 @@ alert("¡Bienvenido a nuestro servicio de consulta de ahorros! Presione Enter o 
 let precio1 = prompt("Ingrese el precio del primer producto");
 let precio2 = prompt("Ingrese el precio del segundo producto");
 
-let descuento1 = 0.20;
-let descuento2 = 0.30;
-
-let precio1Oferta = ((precio1)-(precio1*descuento1));
-let precio2Oferta = ((precio2)-(precio2*descuento2));
+const descuento1 = 0.20;
+const descuento2 = 0.30;
 
 function oferta1 (precio1, descuento1) {
-    precio1OfertaFunction = (precio1)-(precio1*descuento1);
+return (precio1)-(precio1*descuento1)
 }
 
 function oferta2 (precio2, descuento2) {
-    precio2OfertaFunction = (precio2)-(precio2*descuento2);
+return (precio2)-(precio2*descuento2)
 }
 
-function descuento1Function (precio1, descuento1) {
-    descuentoObtenido1 = precio1 * descuento1;
+function descuento1Importe (precio1, descuento1) {
+return precio1 * descuento1
 }
 
-function descuento2Function (precio2, descuento2) {
-    descuentoObtenido2 = precio2 * descuento2;
+function descuento2Importe (precio2, descuento2) {
+return precio2 * descuento2;
 }
 
-alert("Los productos que usted quiere comprar suman" + " " + "AR$"+(precio1Oferta+precio2Oferta) + ".");
+alert("Los productos que usted quiere comprar suman" + " " + "AR$"+(oferta1(precio1,descuento1)+oferta2(precio2,descuento2)) + ".");
 
-alert(" Está ahorrando" + " " + "AR$"+((precio1*descuento1)+(precio2*descuento2)));
+alert(" Está ahorrando" + " " + "AR$"+(descuento1Importe(precio1,descuento1)+descuento2Importe(precio2,descuento2)));
 
 
 let otraConsulta = prompt("¿Desea consultar otros productos? Escriba 'S' y Enter o Aceptar para continuar o culaquier tecla para cerrar")
 
 
-
 if (otraConsulta == "S") {
-    precio1 = prompt("Ingrese el precio del primer producto");
-    precio2 = prompt("Ingrese el precio del segundo producto");
-
-    oferta1 (precio1, descuento1);
-    oferta2 (precio2, descuento2);
-    descuento1Function (precio1, descuento1);
-    descuento2Function (precio2, descuento2);
-
-    alert("Los productos que usted quiere comprar suman" + " " + "AR$"+(oferta1 + oferta2) + ".");
-
-    alert(" Está ahorrando" + " " + "AR$"+(descuento1 + descuento2));
     
+    let precio1 = prompt("Ingrese el precio del primer producto");
+    let precio2 = prompt("Ingrese el precio del segundo producto");
+
+    function oferta1 (precio1, descuento1) {
+        return (precio1)-(precio1*descuento1)
+    }
+    
+    function oferta2 (precio2, descuento2) {
+        return (precio2)-(precio2*descuento2)
+    }
+    
+    function descuento1Importe (precio1, descuento1) {
+        return precio1 * descuento1
+    }
+    
+    function descuento2Importe (precio2, descuento2) {
+        return precio2 * descuento2;
+    }
+    
+    alert("Los productos que usted quiere comprar suman" + " " + "AR$"+(oferta1(precio1,descuento1)+oferta2(precio2,descuento2)) + ".");
+    
+    alert(" Está ahorrando" + " " + "AR$"+(descuento1Importe(precio1,descuento1)+descuento2Importe(precio2,descuento2)));
+    
+    
+    let otraConsulta = prompt("¿Desea consultar otros productos? Escriba 'S' y Enter o Aceptar para continuar o culaquier tecla para cerrar")   
     
 } else {
     alert("Muchas gracias por utilizar nuestro servicio. ¡Que tenga un lindo día!")
     }
-
-
-otraConsulta = prompt("¿Desea consultar otros productos? Escriba 'S' y Enter o Aceptar para continuar o culaquier tecla para cerrar")
