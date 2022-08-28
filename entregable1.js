@@ -6,8 +6,8 @@ const consultasAutorizadas = 4;
 
 alert("Le quedan "+ consultasAutorizadas+ " consultas");
 
-for (let i = 1; i <=4; i--) {
-    let consultasRestantes = consultasAutorizadas - 1;
+for (let i = 4; i = 0; i--) {
+    let consultasRestantes = consultasAutorizadas - i;
     
     let precio1 = prompt("Ingrese el precio del primer producto");
     let precio2 = prompt("Ingrese el precio del segundo producto");
