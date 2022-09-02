@@ -34,27 +34,27 @@ if (tipoUsuario == "A") {
             }
 
         } else if (accionesAdmin == 3) {
+
+            let continueCarga = "S"
             
-                let continueCarga = "S";
-
-                do {
-                    function Producto(categoria, marca, modelo, precio) {
-                        this.categoria = categoria;
-                        this.marca = marca;
-                        this.modelo = modelo;
-                        this.precio = precio;
-                    };
+                // do {
+                //      function Producto(categoria, marca, modelo, precio) {
+                //          this.categoria = categoria;
+                //          this.marca = marca;
+                //          this.modelo = modelo;
+                //          this.precio = precio;
+                //      };
     
-                    let categoria1 = prompt("Ingresa categoria");
-                    let marca1 = prompt("Ingresa marca");
-                    let modelo1 = prompt("Ingresa modelo");
-                    let precio1 = prompt("Ingresa precio");
+                //      let categoria1 = prompt("Ingresa categoria");
+                //      let marca1 = prompt("Ingresa marca");
+                //      let modelo1 = prompt("Ingresa modelo");
+                //      let precio1 = prompt("Ingresa precio");
                     
-                    const producto1 = new Producto(categoria1,marca1,modelo1,precio1);
+                //      const producto1 = new Producto(categoria1,marca1,modelo1,precio1);
     
-                    alert("El producto ingresado es " +JSON.stringify(producto1));
+                //      alert("El producto ingresado es " +JSON.stringify(producto1));
 
-                } while (continueCarga == "S");                
+                //      } while (continueCarga == "S");  No sé qué estoy haciendo mal en este do while, pero no funciona.              
 
             } else if (accionesAdmin == 4) {
                 
