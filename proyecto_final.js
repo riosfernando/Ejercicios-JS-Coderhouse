@@ -2,7 +2,7 @@
 // 1. Clasificar a los usuarios en Administrador o Cliente
 // 2. En función del tipo de usuario, se habilitan ciertas operaciones posibles. Los Administradores pueden modificar y/o crear, mientras que los Clientes solo pueden consultar.
 
-let tipoUsuario = prompt("Bienvenido! Ingresa la letra A mayúscula si eres Administrador o la letra C mayúscula si eres Cliente");
+/*let tipoUsuario = prompt("Bienvenido! Ingresa la letra A mayúscula si eres Administrador o la letra C mayúscula si eres Cliente");
 
 const productoNuevo = []
 
@@ -75,6 +75,10 @@ if (tipoUsuario == "A") {
 
         alert("Las únicas selecciones posibles son A o C. Por favor, inicia nuevamente el proceso de validación");
 
-    }
+    }*/
 
-    console.log(productoNuevo);
+
+console.dir(document);
+console.dir(document.body);
+
+

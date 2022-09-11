@@ -9,7 +9,7 @@
 </head>
 <body>
     
-  <!-- Selector de tipo de usuario -->
+    <!-- Selector de tipo de usuario -->
     <select class="form-select" aria-label="Default select example">
         <option selected>Selecciona el tipo de usuario</option>
         <option id="adminUser" value="1">Administrador</option>
@@ -19,8 +19,16 @@
     <!-- Captura de nombre de usuario -->
     <div class="form-floating">
         <textarea class="form-control" placeholder="Ingresa tu nombre de usuario" id="floatingTextarea"></textarea>
-        <label for="floatingTextarea">Nombre</label> <!--Lo que ingrese el usuario acá va a localStorage-->
-    </div>    
+        <label id="userName" for="floatingTextarea">Nombre</label>
+    </div>
+    
+    <button type="button" onclick="alert('You pressed the button!')">
+        Click me!
+    </button>
+
+    <button type="submit">
+        Ingresar
+    </button>
 
     <script src="proyecto_final.js"></script>
 </body>
