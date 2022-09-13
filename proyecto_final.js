@@ -78,7 +78,10 @@ if (tipoUsuario == "A") {
     }*/
 
 
-console.dir(document);
-console.dir(document.body);
+let ingresar = document.getElementById("ingresar");
+let userName = document.getElementById("userName");
+let welcome =document.getElementById("userWelcome");
 
-
+ingresar.addEventListener("click", () => {
+    alert ("Hola Administrador, te redirigiremos a tu página de inicio. Por favor, presiona el botón OK");
+})
